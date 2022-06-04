@@ -18,7 +18,7 @@ from django.urls import path,include
 from first_app import views
 
 urlpatterns = [
-    path('',views.index,name='index'),
+    path('',views.home,name='home'),
     path('admin/', admin.site.urls),
     path('first_app/',include('first_app.url')),
     path('form_page/',  views.form_name_view, name = 'form_name'),

@@ -19,6 +19,9 @@ def index(request):
     #return HttpResponse("<em>HELLO WORLD!<em>")
     return render(request,'first_app/index.html',context=date_dict)
 
+def home(request):
+    return render(request,'first_app/home.html')
+
 def help(request):
     helpdict = {'help_insert': 'I am from help function in view'}
     return render(request,'first_app/help.html',context = helpdict)
